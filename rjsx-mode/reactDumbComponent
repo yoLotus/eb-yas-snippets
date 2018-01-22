@@ -1,0 +1,14 @@
+# key: rdumb
+# name: reactDumbComponent
+# --
+import React from 'react'
+
+const ${1:`(let ((fn (capitalize (file-name-nondirectory
+                                 (file-name-sans-extension
+				 (or (buffer-file-name)
+				     (buffer-name (current-buffer))))))))
+(replace-regexp-in-string "_\\|-" "" fn t t))`} = ($2) => (
+  $0
+)
+
+export default ${1:$(yas-text)}
