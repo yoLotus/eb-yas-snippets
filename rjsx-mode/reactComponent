@@ -1,13 +1,22 @@
-# -*- mode: snippet -*-
-# name: reactComponent
 # key: rcomp
+# name: reactComponent
 # --
 import React, { Component } from 'react'
 
-class {1:ComponentName} extends Component {
+class ${1:`(let ((fn (capitalize (file-name-nondirectory
+                                 (file-name-sans-extension
+				 (or (buffer-file-name)
+				     (buffer-name (current-buffer))))))))
+             (replace-regexp-in-string "_\\-" "" fn t t))`} extends Component {
 
   constructor(props) {
     super(props)
     $0
   }
+
+  render() {
+
+  }
 }
+
+export default ${1:$(yas-text)}
