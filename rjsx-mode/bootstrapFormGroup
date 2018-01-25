@@ -1,0 +1,7 @@
+# key: bfgroup
+# name: bootstrapFormGroup
+# --
+<div className="form-group">
+  <label htmlFor="${1:field_name}">${1:$(capitalize (replace-regexp-in-string "_" " " (yas-text) t t))}</label>
+  <input type="${2:text}" name="${1:$(yas-text)}" className="form-control" id="${1:$(yas-text)}" placeholder="${1:$(capitalize (replace-regexp-in-string "_" " " (yas-text) t t))}" />
+</div>
