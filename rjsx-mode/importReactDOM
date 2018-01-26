@@ -1,0 +1,5 @@
+# key: irdom
+# name: importReactDOM
+# --
+import React from 'react'
+import ReactDOM from 'react-dom'
