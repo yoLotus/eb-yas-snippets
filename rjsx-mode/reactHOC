@@ -7,10 +7,8 @@ const ${1:`(let ((fn (capitalize (file-name-nondirectory
                                  (file-name-sans-extension
 				 (or (buffer-file-name)
 				     (buffer-name (current-buffer))))))))
-(replace-regexp-in-string "_\\|-" "" fn t t))`}${2:HOC} = (${3:WrappedComponent}${4:,}) => (
-
+(replace-regexp-in-string "_\\|-" "" fn t t))`}${2:HOC} = (${3:WrappedComponent}${4:,}) => {
   return class extends Component {
-
     constructor(props) {
       super(props)
     }
