@@ -19,4 +19,4 @@ const ${1:`(let ((fn (capitalize (file-name-nondirectory
   }
 }
 
-export default ${1:$(yas-text)}
+export default ${1:$(yas-text)}${2:$(yas-text)}
