@@ -11,7 +11,9 @@ class ${1:`(let ((fn (capitalize (file-name-nondirectory
 
   constructor(props) {
     super(props)
-    $0
+    this.state = {
+      $2
+    }$0
   }
 
   render() {
