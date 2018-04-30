@@ -1,0 +1,28 @@
+# key: redux
+# name: basic redux provider
+# --
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Provider, connect } from 'react-redux'
+import { createStore } from 'redux'
+
+import ${1:AppComponent} from '${2:path_to_app_component}'
+
+const reducer = (state, action) => state
+
+const store = createStore(reducer, {${3:}})
+
+const mapStateToProps = state => ({ ...state })
+
+const ${4:ConnectedAppComponent} = connect(mapStateToProps)(${1:$(yas-text)})
+
+ReactDOM.render(
+  <Provider store={store}>
+    <div>
+      <${4:$(yas-text)}/>
+    </div>
+  </Provider>,
+  document.getElementById('{$0}')
+)
+
+export { store }
